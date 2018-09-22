@@ -1,0 +1,37 @@
+<div class="main-container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="login-container">
+                        <div class="center">
+                            <h1>
+                                <i class="ace-icon fa fa-leaf blue"></i>
+                                <span class="blue">FLAPP</span>
+                                <span class="white" id="id-text2">ADMIN</span>
+                            </h1>
+                            <!--<h4 class="blue" id="id-company-text">&copy; Company Name</h4> -->
+                        </div>
+                          <div class="space-6"></div>
+                          <div class="position-relative">  
+                           <router-outlet></router-outlet>  
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src=../../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+      jQuery(function($){
+        $('body').attr('class', 'login-layout light-login');
+				$('#id-text2').attr('class', 'grey');
+				$('#id-company-text').attr('class', 'blue');
+      })
+    </script>

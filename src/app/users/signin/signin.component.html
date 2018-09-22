@@ -1,0 +1,66 @@
+<div id="login-box" class="login-box visible widget-box no-border">
+  <div class="widget-body">
+      <div class="widget-main">
+          <h4 class="header blue lighter bigger">
+              <i class="ace-icon fa fa-coffee green"></i>
+              Please Enter Your Information
+          </h4>
+
+          <div class="space-6"></div>
+
+          <form #loginForm="ngForm" (ngSubmit)="OnSubmit(Email.value,Password.value)" >
+              <fieldset>
+                  <label class="block clearfix">
+                      <span class="block input-icon input-icon-right">
+                          <input type="email" required name="Email" #Email ngModel class="form-control" placeholder="Username" />
+                          <i class="ace-icon fa fa-user"></i>
+                      </span>
+                  </label>
+
+                  <label class="block clearfix">
+                      <span class="block input-icon input-icon-right">
+                          <input type="password" required name="Password" #Password ngModel class="form-control" placeholder="Password" />
+                          <i class="ace-icon fa fa-lock"></i>
+                      </span>
+                  </label>
+
+                  <div class="space"></div>
+
+                  <div class="clearfix">
+                      <label class="inline">
+                          <input name="RememberMe" id="RememberMe" type="checkbox" class="ace" />
+                          <span class="lbl"> Remember Me</span>
+                      </label>
+
+                      <button type="submit" class="width-35 pull-right btn btn-sm btn-primary submitBtn">
+                          <i class="ace-icon fa fa-key"></i>
+                          <span class="bigger-110">Login</span>
+                      </button>
+                  </div>
+
+                  <div class="space-4"></div>
+                  <div *ngIf="isLoginError" style="width:100%" id="divError"  class="alert alert-danger  ">
+                      <a id="linkClose" href="#" class="close">&times;</a>
+                      <div id="divErrorText">Incorrect Username or Password</div>
+                  </div>
+              </fieldset>
+          </form>
+      </div><!-- /.widget-main -->
+
+      <div class="toolbar clearfix">
+          <div>
+              <a routerLink="/reset" class="forgot-password-link">
+                  <i class="ace-icon fa fa-arrow-left"></i>
+                  I forgot my password
+              </a>
+          </div>
+
+          <div>
+              <a routerLink="/register"  class="user-signup-link">
+                  I want to register
+                  <i class="ace-icon fa fa-arrow-right"></i>
+              </a>
+          </div>
+      </div>
+  </div><!-- /.widget-body -->
+</div><!-- /.login-box -->

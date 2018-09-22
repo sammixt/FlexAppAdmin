@@ -1,0 +1,48 @@
+
+        <div class="breadcrumbs ace-save-state" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="ace-icon fa fa-home home-icon"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li class="active">Category</li>
+            </ul><!-- /.breadcrumb -->
+        </div>
+
+        <div class="page-content">
+            <div class="page-header">
+                <h1>
+                   View Category
+                    <small>
+                        <i class="ace-icon fa fa-angle-double-right"></i>
+                        Product Sub Category Detail
+                    </small>
+                </h1>
+            </div><!-- /.page-header -->
+<div class="col-sm-12">
+										<div class="widget-box transparent" id="recent-box">
+											<div class="widget-header">
+											<a routerLink="/productmgtcat" class="btn btn-sm btn-primary">Back</a>
+												<div class="widget-toolbar no-border">
+													<ul class="nav nav-tabs" id="recent-tab">
+														<li class="active pcatdetail">
+															<a data-toggle="tab" routerLink="/pcatdetail">Product Category Details</a>
+														</li>
+
+														<li class="subcatlst">
+															<a data-toggle="tab" routerLink="/subcatlst">Sub-Category List</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main padding-4">
+													<div class="tab-content padding-8">
+													<router-outlet></router-outlet>
+													</div>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+										</div><!-- /.widget-box -->
+									</div><!-- /.col -->
+                  </div>

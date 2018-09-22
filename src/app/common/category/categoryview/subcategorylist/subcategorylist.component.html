@@ -1,0 +1,38 @@
+<div id="task-tab" class="tab-pane active">
+        	<div class="col-xs-12 col-sm-12 widget-container-col" id="widget-container-col-3">
+              <button class="btn btn-success" (click)="openAddModalWithComponent()">Add Subcategory</button>
+              <div class="widget-box widget-color-blue " id="widget-box-3">
+                <div class="widget-header widget-header-small">
+                  <h6 class="widget-title">
+                    <i class="ace-icon fa fa-sort"></i>
+                    Details
+                  </h6>
+                </div>
+
+                <div class="widget-body">
+                  <div class="widget-main no-padding">
+                    <table class="table table-striped table-bordered table-hover" id="dynamic-table">
+                      <thead class="thin-border-bottom" >
+                        <tr>
+                          <th>S/N</th>
+                          <th>Name</th>
+                          <th class="hidden-480">Description</th>
+                          <th class="hidden-480">Action</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="">1</td>
+                          <td>Computer</td>
+                          <td class="hidden-480">Purchase</td>
+                          <td><a title="View" class="btn btn-md btn-info" routerLink="/subcatdetail"><i class="ace-icon fa fa-eye" ></i></a>
+                            &nbsp;<a title="Edit" class="btn btn-md btn-danger" (click)="openEditModalWithComponent()"><i class="ace-icon fa fa-pencil" ></i></a>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  </div>
+                </div>
+              </div>
+</div>

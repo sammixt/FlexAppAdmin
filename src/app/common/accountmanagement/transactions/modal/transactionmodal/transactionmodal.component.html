@@ -1,0 +1,54 @@
+
+      <div class="col-xs-12 col-sm-12 widget-container-col modal-body" id="widget-container-col-2">
+              <div class="widget-box widget-color-blue" id="widget-box-2">
+                <div class="widget-header">
+                  <h5 class="widget-title bigger lighter">
+                    <i class="ace-icon fa fa-table"></i>
+                  {{title}}
+                  </h5>
+              </div>
+                <div class="widget-body">
+                  <div class="widget-main no-padding">
+                    <table class="table table-striped table-bordered table-hover">
+                      
+                        <tr>
+                          <th>Fullname</th>
+                          <td>{{fullName}}</td>
+                        </tr>
+                        <tr>
+                          <th>Credit</th>
+                          <td>{{credit}}</td>
+                        </tr>
+                        <tr>
+                          <th>Debit</th>
+                          <td>{{debit}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Date</th>
+                          <td>{{transactionDate}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Time</th>
+                          <td>{{transactionTime}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Ref</th>
+                          <td>{{transactionRef}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Detail</th>
+                          <td>{{transactionDetail}}</td>
+                        </tr>
+                        <tr>
+                          <th>App Module</th>
+                          <td>{{appMod}}</td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.span -->
+    
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

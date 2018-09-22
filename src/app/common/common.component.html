@@ -1,0 +1,289 @@
+<div id="navbar" class="navbar navbar-default          ace-save-state">
+    <div class="navbar-container ace-save-state" id="navbar-container">
+        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+            <span class="sr-only">Toggle sidebar</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-header pull-left">
+            <a href="index.html" class="navbar-brand">
+                <small>
+                    <i class="fa fa-home"></i>
+                    Flex
+                </small>
+            </a>
+        </div>
+
+        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+ 
+                <li class="light-blue dropdown-modal">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="../../../assets/images/avatars/avatar2.png" alt="Jason's Photo" />
+                        <span class="user-info">
+                            <small>Welcome,</small>
+                          Test Test
+                        </span>
+
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+
+                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                        
+                        <li class="divider"></li>
+
+                        <li>
+                            <a (click)="Logout()" >
+                                <i class="ace-icon fa fa-power-off"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.navbar-container -->
+</div>
+<!-- End Header section-->
+
+<!-- Main Container Section -->
+<div class="main-container ace-save-state" id="main-container">
+        <script type="text/javascript">
+            try { ace.settings.loadState('main-container') } catch (e) { }
+        </script>
+
+        <!-- Sidebar Section -->
+  <div id="sidebar" class="sidebar responsive ace-save-state">
+    <script type="text/javascript">
+		try{ace.settings.loadState('sidebar')}catch(e){}
+    </script>
+
+    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+            <a (click)="Logout()" class="btn btn-danger">
+                <i class="ace-icon fa fa-sign-out"></i>
+            </a>
+        </div>
+
+        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+            <span class="btn btn-success"></span>
+
+            <span class="btn btn-info"></span>
+
+            <span class="btn btn-warning"></span>
+
+            <span class="btn btn-danger"></span>
+        </div>
+    </div><!-- /.sidebar-shortcuts -->
+    <ul class="nav nav-list">
+      <li class="" id="dashboard">
+            <a routerLink="/dashboard">
+                <i class="menu-icon fa fa-tachometer"></i>
+                <span class="menu-text"> Dashboard </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
+        <li class="" id="acctmgt">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Account</span>
+            </a>
+
+            <b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="" id="acctmgttrans">
+								<a routerLink="/acctmgttrans">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Transaction
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+              <li class="" id="acctmgtpay">
+								<a routerLink="/acctmgtpay">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Payment
+								</a>
+								<b class="arrow"></b>
+							</li>
+              <li class="" id="acctmgtwallet">
+								<a routerLink="/acctmgtwallet">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Wallet
+								</a>
+								<b class="arrow"></b>
+							</li>
+              <li class="" id="acctmgtreferral">
+								<a routerLink="/acctmgtreferral">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Referral
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+        </li>
+        <li class="" id="escrowacct">
+            <a routerLink="/escrowacct">
+                <i class="menu-icon fa fa-exchange"></i>
+                <span class="menu-text"> Escrow Account </span>
+            </a>
+            <b class="arrow"></b>
+        </li>
+          <li class="" id="inventory">
+            <a  class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Inventory</span>
+            </a>
+            <b class="arrow"></b>
+						<ul class="submenu">
+							<li class="" id="inventoryhst">
+								<a routerLink="/inventoryhst">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inventory History
+								</a>
+								<b class="arrow"></b>
+							</li>
+
+              <li class="" id="inventorymerchant">
+								<a routerLink="/inventorymerchant">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Merchant Inventory
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+        </li>
+         <li class="" id="productmgt">
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Product Management</span>
+            </a>
+            <b class="arrow"></b>
+						<ul class="submenu">
+							<li class="" id="productmgtcat">
+								<a routerLink="/productmgtcat">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Category
+								</a>
+								<b class="arrow"></b>
+							</li>
+
+              <li class="" id="productmgtopt">
+								<a routerLink="/productmgtopt">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Product Management
+								</a>
+								<b class="arrow"></b>
+							</li>
+              <li class="" id="productmgtbrand">
+								<a routerLink="/productmgtbrand">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Brand Setup
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+        </li>
+        <li class="" id="flapmgt">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Flap Management</span>
+            </a>
+            <b class="arrow"></b>
+						<ul class="submenu">
+							<li class="" id="flapmgtuser">
+								<a routerLink="/flapmgtuser">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Management
+								</a>
+								<b class="arrow"></b>
+							</li>
+
+              <li class="" id="flapmgtperm">
+								<a routerLink="/flapmgtperm">
+									<i class="menu-icon fa fa-caret-right"></i>
+								Permission
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+        </li>
+         <li class="" id="merchant">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Merchant</span>
+            </a>
+            <b class="arrow"></b>
+						<ul class="submenu">
+							<li class="" id="merchantorg">
+								<a routerLink="/flapmgtuser">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Organisation
+								</a>
+								<b class="arrow"></b>
+							</li>
+
+              <li class="" id="merchantmap">
+								<a routerLink="/merchantmap">
+									<i class="menu-icon fa fa-caret-right"></i>
+								Map View
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+        </li>
+        <li class="" id="supplierset">
+            <a routerLink="/supplierset">
+                <i class="menu-icon fa fa-lock"></i>
+                <span class="menu-text"> Supplier Setup </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
+    </ul>
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+    </div>
+</div>
+
+        <!-- End Sidebar Section -->
+        <!-- Body Rection-->
+        <div class="main-content">
+            <div class="main-content-inner">
+                <router-outlet></router-outlet>  
+            </div>
+        </div>
+        <!-- End Body Section-->
+       
+       <!-- Footer Section -->
+    <div class="footer">
+    <div class="footer-inner">
+        <div class="footer-content">
+            <span class="bigger-120">
+                <span class="blue bolder">Flex</span>
+                &copy; 2018
+            </span>
+        </div>
+    </div>
+</div>
+
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+    <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+</a>
+
+
+        <!-- End Footer Section -->
+</div>
+
+<!-- End Main Container Section -->
+<!-- script section -->
+ 
+<!-- End script section -->

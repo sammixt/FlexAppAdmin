@@ -1,0 +1,46 @@
+
+      <div class="col-xs-12 col-sm-12 widget-container-col modal-body" id="widget-container-col-2">
+              <div class="widget-box widget-color-blue" id="widget-box-2">
+                <div class="widget-header">
+                  <h5 class="widget-title bigger lighter">
+                    <i class="ace-icon fa fa-table"></i>
+                  {{title}}
+                  </h5>
+              </div>
+                <div class="widget-body">
+                  <div class="widget-main no-padding">
+                    <table class="table table-striped table-bordered table-hover">
+                      
+                        <tr>
+                          <th>Name</th>
+                          <td>{{name}}</td>
+                        </tr>
+                        <tr>
+                          <th>Description</th>
+                          <td>{{description}}</td>
+                        </tr>
+                        <tr>
+                          <th>Symbol</th>
+                          <td>{{symbol}}</td>
+                        </tr>
+                        <tr>
+                          <th>Organisation</th>
+                          <td>{{organisation}}</td>
+                        </tr>
+                        <tr>
+                          <th>Product Brand</th>
+                          <td>{{productBrand}}</td>
+                        </tr>
+                        <tr>
+                          <th>App Module</th>
+                          <td>{{appMod}}</td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.span -->
+    
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

@@ -1,0 +1,51 @@
+<div id="task-tab" class="tab-pane active">
+        <h4 class="smaller lighter green">
+          <i class="ace-icon fa fa-list"></i>
+          Transaction History
+        </h4>
+
+        <table class="table table-bordered table-striped">
+      <thead class="thin-border-bottom">
+        <tr>
+          <th>
+            <i class="ace-icon fa fa-caret-right blue"></i>S/N
+          </th>
+
+          <th>
+            <i class="ace-icon fa fa-caret-right blue"></i>Customer
+          </th>
+
+          <th class="hidden-480">
+            <i class="ace-icon fa fa-caret-right blue"></i>Credit
+          </th>
+           <th class="hidden-480">
+            <i class="ace-icon fa fa-caret-right blue"></i>Debit
+          </th>
+           <th class="hidden-480">
+            <i class="ace-icon fa fa-caret-right blue"></i>Trans. Type
+          </th>
+           <th class="hidden-480">
+            <i class="ace-icon fa fa-caret-right blue"></i>Action
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!--<tr *ngFor="let hist of history">-->
+          <tr>
+          <td>1</td>
+
+          <td>
+            Samuel
+          </td>
+
+          <td class="hidden-480">
+             100.00
+          </td>
+          <td>0.00</td>
+          <td>Admin Fee</td>
+          <td><i class="ace-icon fa fa-eye" (click)="openModalWithComponent()"></i></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

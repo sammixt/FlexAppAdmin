@@ -1,0 +1,69 @@
+      <div class="col-xs-12 col-sm-12 widget-container-col modal-body" id="widget-container-col-2">
+              <div class="widget-box widget-color-blue" id="widget-box-2">
+                <div class="widget-header">
+                  <h5 class="widget-title bigger lighter">
+                    <i class="ace-icon fa fa-table"></i>
+                  {{title}}
+                  </h5>
+              </div>
+                <div class="widget-body">
+                  <div class="widget-main no-padding">
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                          <th>Payer</th>
+                          <td>{{payer}}</td>
+                        </tr>
+                        <tr>
+                          <th>Getter</th>
+                          <td>{{getter}}</td>
+                        </tr>
+                        <tr>
+                          <th>Amount Requested</th>
+                          <td>{{amountRequested}}</td>
+                        </tr>
+                        <tr>
+                          <th>Amount Charged</th>
+                          <td>{{amountCharged}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Type</th>
+                          <td>{{transactionType}}</td>
+                        </tr>
+                        <tr>
+                          <th>Paid On</th>
+                          <td>{{paidOn}}</td>
+                        </tr>
+                        <tr>
+                          <th>Approval Status</th>
+                          <td>{{approvalStatus}}</td>
+                        </tr>
+                        <tr>
+                          <th>Transaction Status</th>
+                          <td>{{transactionStatus}}</td>
+                        </tr>
+                         <tr>
+                          <th>Details</th>
+                          <td>{{detail}}</td>
+                        </tr>
+                         <tr>
+                          <th>Application Module</th>
+                          <td>{{appMod}}</td>
+                        </tr>
+                        <tr>
+                          <th>Created By</th>
+                          <td>{{createdBy}}</td>
+                        </tr>
+                        <tr>
+                          <th>Created Date</th>
+                          <td>{{createdDate}}</td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.span -->
+    
+    <div class="modal-footer">
+       <button type="button" class="btn btn-primary" >Approve</button>
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>
