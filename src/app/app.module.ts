@@ -45,6 +45,11 @@ import { AuthGuard } from "./auth/auth.guard";
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { AuthInterceptor } from "./auth/auth-interceptor";
 import { SubcategorydetailsComponent } from './common/category/categoryview/subcategorydetails/subcategorydetails.component';
+import { AddProductComponent } from './common/productmanagement/add-product/add-product.component';
+import { AddSuplierComponent } from './common/suppliersetup/modal/add-suplier/add-suplier.component';
+import { EditSuplierComponent } from './common/suppliersetup/modal/edit-suplier/edit-suplier.component';
+import { ViewSuplierComponent } from './common/suppliersetup/modal/view-suplier/view-suplier.component';
+import { ProductOptionComponent } from './common/productmanagement/product-option/product-option.component';
 
 
 @NgModule({
@@ -84,7 +89,12 @@ import { SubcategorydetailsComponent } from './common/category/categoryview/subc
     EditsubcategorymodalComponent,
     UsersComponent,
     SigninComponent,
-    SubcategorydetailsComponent
+    SubcategorydetailsComponent,
+    AddProductComponent,
+    AddSuplierComponent,
+    EditSuplierComponent,
+    ViewSuplierComponent,
+    ProductOptionComponent
   ],
 
   entryComponents:[
@@ -97,7 +107,10 @@ import { SubcategorydetailsComponent } from './common/category/categoryview/subc
     AddinventorymodalComponent,
     AddcategorymodalComponent,
     EditcategorymodalComponent,
-    AddsubcategorymodalComponent
+    AddsubcategorymodalComponent,
+    AddSuplierComponent,
+    EditSuplierComponent,
+    ViewSuplierComponent
   ],
   
   imports: [

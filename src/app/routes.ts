@@ -23,6 +23,7 @@ import { SubcategorylistComponent } from "./common/category/categoryview/subcate
 import { UsersComponent } from "./users/users.component";
 import { SigninComponent } from "./users/signin/signin.component";
 import { SubcategorydetailsComponent } from "./common/category/categoryview/subcategorydetails/subcategorydetails.component";
+import { AddProductComponent } from "./common/productmanagement/add-product/add-product.component";
 
 export const appRoutes : Routes = [
    {
@@ -92,6 +93,11 @@ export const appRoutes : Routes = [
     }]
 },
 { 
+      path : 'addproduct', component : CommonComponent,
+      children:[{path:'',component:AddProductComponent
+    }]
+},
+{ 
       path : 'subcatlst', component : CommonComponent,
       children:[{path:'',component:CategoryviewComponent,
       children:[{path:'',component:SubcategorylistComponent
@@ -105,5 +111,9 @@ export const appRoutes : Routes = [
 {
    path: 'acctmgtreferral',component:CommonComponent,
    children:[{path:'',component:ReferralComponent}]
-}  
+},  
+{
+   path: 'supplierset',component:CommonComponent,
+   children:[{path:'',component:SuppliersetupComponent}]
+},
 ];

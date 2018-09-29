@@ -17,24 +17,24 @@ import { RegisterService } from "../../bll/register-service";
 export class SigninComponent implements OnInit {
 
   constructor(private authService: RegisterService, private httpclient: HttpClient, private router: Router) { }
-  token;
+  token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBc2l3YWp1IiwidXNlcklkIjoiMSIsInJvbGUiOltdLCJhcHBsaWNhdGlvbl9tb2R1bGVzIjpbIkZMQVAiLCJGTEVYLUNVUlJFTkNZIiwiRkxFWFBBWS1JTlRFUk5BVElPTiJdLCJpc3N1ZXIiOiJTWVNURU1fQURNSU4iLCJtZXNzYWdlIjoibG9naW4gc3VjY2Vzc2Z1bCIsIndobyI6Ikg3MUxJNWciLCJxdWVzdGlvbl9udW1iZXIiOjMsImlhdCI6MTUzNzgxMjkwOCwiZXhwIjoxNTM3ODMwOTA4fQ.Ys1tsrYDzgSfR806utsKKlp5MHuvyV4Nlncm2TBN59M-bX6msxrO-Bwiy9xIL71D9qSvuVkuABtlbD0USBPtPQ";
   data = {
     'username': 'Asiwaju',
     'password': 'password'
   };
 
     initData = {
-    application_modules : [],
-    exp : 1527373299,
-    iat : 1527355299,
-    message : 'Success! So We know you. But not completely. So....',
+    application_modules : ["FLAP","FLEX-CURRENCY","FLEXPAY-INTERNATION"],
+    exp : 1537830908,
+    iat : 1537812908,
+    message : 'login successful',
     question : 'What was your favorite place to visit as a child?',
     question_number : 3,
     role : [],
-    status : 0,
+    issuer : "SYSTEM_ADMIN",
     sub : 'Asiwaju',
     userId : '1',
-    who : 'BRE4fgy'
+    who : 'H71LI5g'
   };
 
    ngOnInit() {

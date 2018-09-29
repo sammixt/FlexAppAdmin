@@ -1,0 +1,123 @@
+<div class="col-xs-12 col-sm-12 widget-container-col modal-body" id="widget-container-col-2">
+              <div class="widget-box widget-color-blue" id="widget-box-2">
+                <div class="widget-header">
+                  <h5 class="widget-title bigger lighter">
+                    <i class="ace-icon fa fa-table"></i>
+                  {{title}}
+                  </h5>
+              </div>
+			 
+                <div class="widget-body ">
+                  <div class="widget-main ">
+                    <form #addCategoryForm="ngForm" class="form-horizontal" role="form" (ngSubmit)="OnSubmit(addCategoryForm)">
+						
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="company"> Company Name </label>
+
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{company}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="officialemail"> Official Email </label>
+							<div class="col-sm-9">
+                 <p class="form-control-static col-xs-10 col-sm-8">{{officialemail}}</p>
+							</div>
+						</div>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="bank">Bank</label>
+							<div class="col-sm-9">
+               <p class="form-control-static col-xs-10 col-sm-8">{{bank}}</p>
+							</div>
+						</div>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="accountnumber">Account No.</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{accountnumber}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="sortcode">Sort Code</label>
+							<div class="col-sm-9">
+               <p class="form-control-static col-xs-10 col-sm-8">{{sortcode}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="phone">Official Phone</label>
+							<div class="col-sm-9">
+                 <p class="form-control-static col-xs-10 col-sm-8">{{phone}}</p>
+							</div>
+						</div>
+            <br/>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="sortcode">Address</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{address}}</p>
+							</div>
+						</div>
+						 <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="province">Province</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{province}}</p>
+							</div>
+						</div>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="state">State</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{state}}</p>
+							</div>
+						</div>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="state">Country</label>
+							<div class="col-sm-9">
+               <p class="form-control-static col-xs-10 col-sm-8">{{country}}</p>
+							</div>
+						</div>
+						<br/>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="contactemail">Contact Email</label>
+							<div class="col-sm-9">
+                 <p class="form-control-static col-xs-10 col-sm-8">{{contactemail}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="createdby">Created By</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{createdby}}</p>
+							</div>
+						</div>
+             <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="createddate">Created Date</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{createddate}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="modifiedby">Modified By</label>
+							<div class="col-sm-9">
+                <p class="form-control-static col-xs-10 col-sm-8">{{modifiedby}}</p>
+							</div>
+						</div>
+            <div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right" for="modifiedddate">Modified Date</label>
+							<div class="col-sm-9">
+                 <p class="form-control-static col-xs-10 col-sm-8">{{modifiedddate}}</p>
+							</div>
+						</div>
+						<div class="clearfix form-group">
+							<div class="col-md-offset-3 col-md-9">
+								<button class="btn btn-info" type="submit">
+									<i class="ace-icon fa fa-check bigger-110"></i>
+									Submit
+								</button>
+							</div>
+						</div>
+					</form>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.span -->
+    
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>
